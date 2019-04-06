@@ -22,3 +22,25 @@
 .mdl-layout{
     overflow: hidden;
 }
+
+.halloween{
+    margin-left: 10px
+}
+
+.mdl-layout--small-screen-only{
+    background-color: black;
+}
+
+.mdl-layout--small-screen-only .mdl-layout-title{
+    color: white;
+    font-weight: bold;
+}
+
+.mdl-layout--small-screen-only > .mdl-navigation > .mdl-navigation__link{
+    color: white;
+}
+
+.mdl-layout--small-screen-only > .mdl-navigation > .mdl-navigation__link:hover{
+    color: white;
+    background-color: #f8621f;
+}

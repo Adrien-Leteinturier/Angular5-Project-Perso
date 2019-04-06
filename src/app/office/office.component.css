@@ -11,6 +11,17 @@ app-element-form{
     font-family: 'Righteous', cursive;
 }
 
+.mdl-layout__header{
+    background-color: #f8621f;
+}
+
+.mdl-layout-title > span:first-child {
+    margin-right: 10px;
+}
+.cursor-pointer{
+    cursor: pointer;
+}
+
 @media screen and (max-width: 640px) {
     .mdl-layout-title span:first-child{
         display: none;

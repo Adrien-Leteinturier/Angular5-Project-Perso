@@ -5,7 +5,7 @@
 
 .app-element-forms-container .fa-compass{
     font-size: 44px;
-    color: #6740B3;
+    color: #f8621f;
 }
 
 .mdl-textfield__label{
@@ -13,7 +13,7 @@
 }
 
 .app-element-forms-weather-container{
-    background-color: #6740B3;
+    background-color: #f8621f;
     padding: 20px;
 }
 
@@ -66,7 +66,7 @@ form button{
 
 .weather-title{
     margin-top: 50px;
-    color: #6740B3;
+    color: #f8621f;
     font-size: 50px;
     text-align: center;
     font-style: italic;

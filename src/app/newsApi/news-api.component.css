@@ -32,7 +32,7 @@
 
 .app-news-text-container h3 {
   font-family: 'Alfa Slab One', cursive;
-  color: #6740B3;
+  color: #f8621f;
   font-size: 20px;
   line-height: 24px;
   margin: 0;
@@ -46,11 +46,11 @@
   padding: 20px;
   color: white;
   margin-right: 17px;
-  background-color: #6740B3;
+  background-color: #f8621f;
 }
 
 .app-news-content-container a {
-  color: rgb(255, 64, 129);
+  color: black;
   font-size: 14px;
   transition: 2s;
 }
@@ -73,7 +73,7 @@
 }
 
 .app-news-button-src button {
-  background-color: #6740B3;
+  background-color: #f8621f;
   color: white;
   margin-bottom: 5px;
 }
@@ -83,7 +83,7 @@
 }
 
 .app-news-text-container.active {
-  background-color: #6740B3;
+  background-color: #f8621f;
 }
 
 .app-news-text-container h3.active {

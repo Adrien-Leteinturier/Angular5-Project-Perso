@@ -12,11 +12,11 @@
 .app-pres-logo {
     
 /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#6639b6+0,000000+52 */
-    background: #6639b6; /* Old browsers */
-    background: -moz-linear-gradient(-45deg, #6639b6 0%, #000000 52%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(-45deg, #6639b6 0%,#000000 52%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(135deg, #6639b6 0%,#000000 52%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6639b6', endColorstr='#000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    background: #f8621f; /* Old browsers */
+    background: -moz-linear-gradient(-45deg, #f8621f 0%, #000000 52%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, #f8621f 0%,#000000 52%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, #f8621f 0%,#000000 52%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8621f', endColorstr='#000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
     margin-top: 50px;
 }
 
@@ -37,8 +37,8 @@
 }
 
 .app-pres-logo h2 span:nth-child(2){
-	background: -webkit-linear-gradient(to left, #673AB7, white);
-	background: linear-gradient(to left, #673AB7, white);
+	background: -webkit-linear-gradient(to left, #f8621f, white);
+	background: linear-gradient(to left, #f8621f, white);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
     font-size: 20vw;
@@ -47,7 +47,7 @@
 
 .app-pres-logo h2 span:last-child{
     font-family: 'Righteous', cursive;
-    color: #673AB7;
+    color: #f8621f;
 }
         
 .app-pres-logo a{

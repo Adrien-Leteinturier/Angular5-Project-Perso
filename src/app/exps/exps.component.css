@@ -29,13 +29,13 @@
 }
 .app-exps-container-logo-exps p{
     font-family: 'Alfa Slab One', cursive;
-    color:#673AB7;
+    color:#c9c9c9;
     font-size: 18px;
     margin-top: 10px;
 }
 .app-exps-container-logo-exps p:last-child{
     font-size: 14px;
-    color:#c9c9c9;
+    color: #f8621f;
 }
 @media screen and (max-width: 640px) {
     .app-exps-container-logo-exps p{

@@ -1,6 +1,6 @@
 h2{
     font-family: 'Alfa Slab One', cursive;
-    color: #673AB7;
+    color: #f8621f#f8621f;
 }  
 
 .app-footer-container{
@@ -14,8 +14,9 @@ h2{
     font-size: 13px;
 }
 
+
 .app-footer-section-rigth{
-    background: #673AB6;
+    background: #f8621f;
     padding: 20px;
 }
 .app-footer-section-center-socials{
@@ -45,7 +46,7 @@ h2{
 .app-footer-section-center-socials li a:hover{
     transform: rotate(60deg);
     transform: scale(1.5);
-    color: #673AB6;
+    color: #f8621f;
 }
 .app-footer-section-right-map{
     margin-top: 10px;
