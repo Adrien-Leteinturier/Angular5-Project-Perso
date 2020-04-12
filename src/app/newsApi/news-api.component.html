@@ -45,6 +45,12 @@
         <div class="app-news-img-container">
           <img src="{{imgNews == null ? noImg : imgNews}}">
         </div>
+        <div class="app-news-content-container">
+          <span>{{contentNews}}</span>
+          <a href="{{authorNewsLink}}" target="_blank">
+            <cite>{{authorNews === null ? srcName : authorNews}}</cite>
+          </a>
+        </div>
       </div>
       <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 app-news-text text-center no-padding-left">
         <div class="app-news-text-container" *ngFor="let dataNew of dataNews; let i=index" [ngClass]="{active: isSelectedItem(dataNew, dataNew.id) }" (click)="selectedSrcData(i); selectedStyle(dataNew)"
@@ -53,16 +59,7 @@
       </div>
     </div>
   </div>
-  <div class="row">
-    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-      <div class="app-news-content-container">
-        <span>{{contentNews}}</span>
-        <a href="{{authorNewsLink}}" target="_blank">
-          <cite>{{authorNews === null ? srcName : authorNews}}</cite>
-        </a>
-      </div>
-    </div>
-  </div>
 </div>
 </div>
 </div>
+

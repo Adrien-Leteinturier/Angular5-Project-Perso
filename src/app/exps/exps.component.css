@@ -1,3 +1,7 @@
+.app-exps{
+    margin: 200px 10px 200px 10px; 
+}
+
 .app-exps-container{
     background-color: white;
     margin-top: 50px;
@@ -6,14 +10,14 @@
 }
 
 .app-exps-img-pastille{
-    background-color: #6639b6;
+    background-color: #7985A1;
     padding: 15px;
     border-radius: 40px;
 }
-.app-exps-title-separate h2{
-    color: white;
-    font-size: 40px;
-    font-weight: bold;
+
+.app-exps-title-separate{
+    margin: 20px 0px 0px 15px;
+    float: left;
 }
 
 .hr-custom-title{
@@ -28,15 +32,22 @@
     margin: 20px 5px 5px 5px;
 }
 .app-exps-container-logo-exps p{
-    font-family: 'Alfa Slab One', cursive;
     color:#c9c9c9;
+    font-weight: 600;
     font-size: 18px;
     margin-top: 10px;
 }
 .app-exps-container-logo-exps p:last-child{
     font-size: 14px;
-    color: #f8621f;
+    color: #7985A1;
 }
+
+.title{
+    float: left;
+    color: white;
+    margin-left: 5px;
+}
+
 @media screen and (max-width: 640px) {
     .app-exps-container-logo-exps p{
         font-size: 12px;

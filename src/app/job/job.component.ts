@@ -15,7 +15,7 @@ import {transition} from '@angular/animations';
             })),
             state('displayOk',style({
                 'height': '90%',
-                'background': 'linear-gradient(135deg, #ffffff 30%,#f8621f 100%)'
+                'background': 'linear-gradient(135deg, #ffffff 30%,#7985A1 100%)'
             })),
             
             

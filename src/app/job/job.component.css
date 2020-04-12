@@ -1,17 +1,16 @@
 .app-job{
-    margin-bottom: 30px;   
+    margin: 200px 10px 200px 10px; 
 }
 
 .app-job-content{
-    background-color: #f8621f;
+    background-color: #7985A1;
     padding: 20px;
     margin-bottom: 50px;    
     margin-top: 30px;
     margin-left: 5px;
     margin-right: 5px;
     text-align: center;
-    border-radius: 3px;
-    font-family: 'Alfa Slab One', cursive;    
+    border-radius: 3px;  
     height: 100%;
     cursor: pointer;
     overflow: hidden;
@@ -20,7 +19,8 @@
 
 .app-job-content span:first-child{
     font-size: 19px;
-    color: black;
+    color: white;
+    font-weight: 300px;
 }
 
 .app-job-content p{
@@ -52,7 +52,7 @@
 
 .app-job-content img{
     opacity: 0;
-    width: 100%;
+    width: 50%;
 }
 
 .app-job-img-displayed{
@@ -63,6 +63,7 @@
 .app-job-techno > i{
     color: white;
     font-size: 40px;
+    display: inline-block;
 }
 
 .close {
@@ -86,7 +87,8 @@
 
 
 .app-job-title-separate{
-    margin-top: 50px;
+    margin: 20px 0px 0px 15px;
+    float: left;
 }
 
 .app-job-title-separate h2{
@@ -100,6 +102,12 @@
     height: 3px;
     width: 270px;
     margin-top: 13px;
+}
+
+.title{
+    float: left;
+    color: white;
+    margin-left: 5px;
 }
 
 @media screen and (max-width: 640px) {

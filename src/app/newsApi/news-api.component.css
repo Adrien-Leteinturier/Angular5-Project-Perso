@@ -9,13 +9,16 @@
   font-weight: bold;
 }
 
+.app-news-img-container{
+  text-align: center;
+}
+
 .app-news-img-container img {
-  width: 100%;
   height: 500px;
 }
 
 .app-news-text {
-  height: 500px;
+  height: 560px;
   overflow: hidden;
   overflow-y: scroll;
 }
@@ -31,22 +34,21 @@
 }
 
 .app-news-text-container h3 {
-  font-family: 'Alfa Slab One', cursive;
-  color: #f8621f;
+  font-weight: 500;
+  color: #7985A1;
   font-size: 20px;
   line-height: 24px;
   margin: 0;
 }
 
 .app-news-content-container {
-  font-family: 'Righteous', cursive;
   margin-bottom: 20px;
   font-size: 18px;
   background-color: white;
   padding: 20px;
   color: white;
   margin-right: 17px;
-  background-color: #f8621f;
+  background-color: #7985A1;
 }
 
 .app-news-content-container a {
@@ -73,7 +75,7 @@
 }
 
 .app-news-button-src button {
-  background-color: #f8621f;
+  background-color: #7985A1;
   color: white;
   margin-bottom: 5px;
 }
@@ -83,7 +85,7 @@
 }
 
 .app-news-text-container.active {
-  background-color: #f8621f;
+  background-color: #7985A1;
 }
 
 .app-news-text-container h3.active {

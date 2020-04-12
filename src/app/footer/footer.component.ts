@@ -43,7 +43,7 @@ export class FooterComponent implements OnInit {
         res => this.socials = res,
         err => console.error(err.status)
     ); 
-    this._BlotterService.mainBlotterSliding('Contactez-moi','Alfa Slab One, cursive',45,'#673AB7',8,0.25,true)
+    this._BlotterService.mainBlotterSliding('Contactez-moi','Alfa Slab One, cursive',45,'#7985A1',8,0.25,true)
 
     this._QuotesService.getQuotes() 
       .subscribe( 

@@ -34,7 +34,7 @@ body{
     display: inline-block;
     font-size: 46px;
     transform: rotate(6deg);
-    color: rgb(255,64,129);
+    color: #7985A1;
 }
 
 .app-title span:last-child{
@@ -43,7 +43,8 @@ body{
     display: inline-block;
     font-size: 46px;
     transform: rotate(-4deg);
-    color: rgb(255,64,129);
+    color: #7985A1;
+    margin: 0 0 0 10px;
 }
 
 input:-webkit-autofill,
@@ -99,8 +100,8 @@ input:-webkit-autofill:active {
 .rings{
     position: relative;
     display: block;
-    width: 25vw;
-    height: 25vw;
+    width: 3vw;
+    height: 3vw;
     margin: 0 auto;
     overflow: hidden;
 }

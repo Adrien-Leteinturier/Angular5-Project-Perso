@@ -1,18 +1,13 @@
 .app-skills{
-    margin-top: 50px;
-    margin-bottom: 100px;    
     background-color:"#1A1A1A";
-    margin-left: 10px;
-    margin-right: 10px;
-    
+    margin: 200px 10px 200px 10px;
 }
 
 .app-skills-item span{
-    color: #f8621f;
+    color: white;
     display: block;
-    font-size: 1.5em;
-    letter-spacing: 2px;
-    line-height: normal;
+    font-size: 1.8em;
+    letter-spacing: 0.5px;
 }
 
 .app-skills-item img{

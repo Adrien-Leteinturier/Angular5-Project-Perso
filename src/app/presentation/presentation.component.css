@@ -5,19 +5,22 @@
     background-image: url('../../assets/images/img-pres.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    padding-top: 150px;
+    height: 1000px;
     background-position: center;
 }
 
 .app-pres-logo {
     
-/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#6639b6+0,000000+52 */
-    background: #f8621f; /* Old browsers */
-    background: -moz-linear-gradient(-45deg, #f8621f 0%, #000000 52%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(-45deg, #f8621f 0%,#000000 52%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(135deg, #f8621f 0%,#000000 52%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8621f', endColorstr='#000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#6639b6+0,000000+52 */
+    background: #7985A1; /* Old browsers */
+    background: -moz-linear-gradient(-45deg, #7985A1 0%, #000000 52%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, #7985A1 0%,#000000 52%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, #7985A1 0%,#000000 52%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7985A1', endColorstr='#000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
     margin-top: 50px;
+    
+    position: absolute;
+    top: 300px;
 }
 
 .app-pres-logo h1{
@@ -37,19 +40,19 @@
 }
 
 .app-pres-logo h2 span:nth-child(2){
-	background: -webkit-linear-gradient(to left, #f8621f, white);
-	background: linear-gradient(to left, #f8621f, white);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
+    background: -webkit-linear-gradient(to left, #7985A1, white);
+    background: linear-gradient(to left, #7985A1, white);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-size: 20vw;
     display: inline;
 }
 
 .app-pres-logo h2 span:last-child{
     font-family: 'Righteous', cursive;
-    color: #f8621f;
+    color: #7985A1;
 }
-        
+
 .app-pres-logo a{
     text-decoration: none;
     color: white;
@@ -59,74 +62,75 @@
 
 .app-pres-socials a
 {
-    display: block;
+    color: white;
+    display: inline-block;
     font-size: 42px;
-    opacity: 0.4;
     margin-bottom: 10px;
+    margin: 0 15px 10px 0;
     transition: all 0.5s ease-out;
 }
 
 .app-pres-socials a:hover
 {
     opacity: 1;
-    color: white;
+    color: #7985A1;
     transform: rotate(60deg);
     transform: scale(1.5);
 }
 
 
 .ml5 {
-
-  font-weight: 300;
-  font-size: 120px;
-  color: #402d2d;
+    
+    font-weight: 300;
+    font-size: 120px;
+    color: #402d2d;
 }
 
 .ml5 .text-wrapper {
-  position: relative;
-  display: inline-block;
-  padding-top: 0.1em;
-  padding-right: 0.05em;
-  padding-bottom: 0.15em;
-  line-height: 1em;
+    position: relative;
+    display: inline-block;
+    padding-top: 0.1em;
+    padding-right: 0.05em;
+    padding-bottom: 0.15em;
+    line-height: 1em;
 }
 
 .ml5 .line {
-  position: absolute;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  margin: auto;
-  height: 3px;
-  width: 100%;
-  background-color: #402d2d;
-  transform-origin: 0.5 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 3px;
+    width: 100%;
+    background-color: #402d2d;
+    transform-origin: 0.5 0;
 }
 
 .ml5 .ampersand {
-  font-family: Baskerville, "EB Garamond", serif;
-  font-style: italic;
-  font-weight: 400;
-  width: 1em;
-  margin-right: -0.1em;
-  margin-left: -0.1em;
+    font-family: Baskerville, "EB Garamond", serif;
+    font-style: italic;
+    font-weight: 400;
+    width: 1em;
+    margin-right: -0.1em;
+    margin-left: -0.1em;
 }
 
 .ml5 .letters {
-  display: inline-block;
-  opacity: 0;
+    display: inline-block;
+    opacity: 0;
 }
 
 
 .container {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
 }
 
 svg {
-	max-width: 8rem;
-	width: 100%;
-	height: auto;
+    max-width: 8rem;
+    width: 100%;
+    height: auto;
 }
