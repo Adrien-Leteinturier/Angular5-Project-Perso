@@ -13,12 +13,17 @@
       "logo": "assets/images/logoNinjaCv.png",
       "imgContent": [
          {
-            "classIcon1": "devicon-javascript-plain",
-            "classIcon2": "devicon-html5-plain",
-            "classIcon3": "devicon-css3-plain",
-            "classIcon4": "devicon-bootstrap-plain"
-            
-         }
+            "classIcon": "devicon-javascript-plain"
+         },
+         {
+            "classIcon": "devicon-html5-plain"
+         },
+         {
+            "classIcon": "devicon-css3-plain"
+         },
+         {
+            "classIcon": "devicon-bootstrap-plain"
+         }            
       ]
    },
    {
@@ -34,14 +39,28 @@
       "logo": "assets/images/logoWriteItSocial.png",
       "imgContent": [
          {
-            "classIcon1": "devicon-javascript-plain",
-            "classIcon2": "devicon-html5-plain",
-            "classIcon3": "devicon-css3-plain",
-            "classIcon4": "devicon-bootstrap-plain",
-            "classIcon5": "devicon-nodejs-plain",
-            "classIcon6": "devicon-mongodb-plain",
-            "classIcon7": "devicon-express-original",
-            "classIcon8": "devicon-git-plain"
+            "classIcon": "devicon-javascript-plain"
+         },
+         {  
+            "classIcon": "devicon-html5-plain"
+         },
+         {  
+            "classIcon": "devicon-css3-plain"
+         },
+         {  
+            "classIcon": "devicon-bootstrap-plain"
+         },
+         {  
+            "classIcon": "devicon-nodejs-plain"
+         },
+         {  
+            "classIcon": "devicon-mongodb-plain"
+         },
+         {  
+            "classIcon": "devicon-express-original"
+         },
+         {  
+            "classIcon": "devicon-git-plain"
          }
       ]
    },
@@ -58,12 +77,22 @@
       "logo": "assets/images/logo-oostaoo.png",
       "imgContent": [
          {
-            "classIcon1": "devicon-javascript-plain",
-            "classIcon2": "devicon-html5-plain",
-            "classIcon3": "devicon-sass-plain",
-            "classIcon4": "devicon-gulp-plain",
-            "classIcon5": "devicon-angularjs-plain",
-            "classIcon6": "devicon-git-plain"                               
+            "classIcon": "devicon-javascript-plain"
+         }, 
+         {
+            "classIcon": "devicon-html5-plain"
+         },
+         {
+            "classIcon": "devicon-sass-plain"
+         },
+         {
+            "classIcon": "devicon-gulp-plain"
+         },
+         {
+            "classIcon": "devicon-angularjs-plain"
+         },
+         {
+            "classIcon": "devicon-git-plain" 
          }
       ]
    },
@@ -79,12 +108,21 @@
       "modalId": "",
       "logo": "assets/images/logoTopten.png",
       "imgContent": [
+
          {
-            "classIcon1": "devicon-jquery-plain", 
-            "classIcon2": "devicon-css3-plain",
-            "classIcon3": "devicon-html5-plain",            
-            "classIcon4": "devicon-wordpress-plain",
-            "classIcon5": "devicon-javascript-plain"              
+            "classIcon": "devicon-jquery-plain"
+         },
+         {
+            "classIcon": "devicon-css3-plain"
+         },
+         {
+            "classIcon": "devicon-html5-plain"          
+         },
+         {
+            "classIcon": "devicon-wordpress-plain"
+         },
+         {
+            "classIcon": "devicon-javascript-plain"              
          }
       ]
    }

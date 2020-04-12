@@ -1,9 +1,7 @@
+
+import {throwError as observableThrowError, of as observableOf} from 'rxjs';
+import {catchError, map} from 'rxjs/operators';
 import {Injectable} from '@angular/core';
-import 'rxjs/add/operator/map';
-import 'rxjs/add/operator/do';
-import 'rxjs/add/observable/throw';
-import 'rxjs/add/observable/of';
-import 'rxjs/add/operator/catch';
 import {Observable} from 'rxjs/internal/Observable';
 import {HttpClient} from '@angular/common/http';
 
@@ -22,21 +20,21 @@ export class ExpsService {
 
   getExpFromAPIwithCache() {
     if (this.data) {
-      return Observable.of(this.data);
+      return observableOf(this.data);
     } else if (this.observable) {
       return this.observable;
     } else {
       this.observable = this._http
-        .get(this.url)
-        .map(response => {
+        .get(this.url).pipe(
+        map(response => {
           this.observable = null;
           this.data = response;
           return this.data;
-        })
-        .catch(error => {
+        }),
+        catchError(error => {
           let errorMessage = `Une erreur ${error.status} est survenue en tentant de joindre ${error.url}`;
-          return Observable.throw(errorMessage);
-        });
+          return observableThrowError(errorMessage);
+        }),);
       return this.observable;
     }
   }

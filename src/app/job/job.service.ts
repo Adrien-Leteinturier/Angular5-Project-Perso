@@ -1,14 +1,9 @@
+
+import {throwError as observableThrowError,  of } from 'rxjs';
+import {catchError, map} from 'rxjs/operators';
 import {Injectable} from '@angular/core';
-import 'rxjs/add/operator/map';
-import 'rxjs/add/operator/do';
-import 'rxjs/add/observable/throw';
-import 'rxjs/add/observable/of';
-import 'rxjs/add/operator/catch';
 import {Observable} from 'rxjs/internal/Observable';
 import {HttpClient} from '@angular/common/http';
-import { of } from 'rxjs';
-
-
 
 @Injectable()
 
@@ -32,16 +27,16 @@ export class JobService {
       return this.observable;
     } else {
       this.observable = this._http
-        .get(this.url)
-        .map(response => {
+        .get(this.url).pipe(
+        map(response => {
           this.observable = null;
           this.data = response;
           return this.data;
-        })
-        .catch(error => {
+        }),
+        catchError(error => {
           let errorMessage = `Une erreur ${error.status} est survenue en tentant de joindre ${error.url}`;
-          return Observable.throw(errorMessage);
-        });
+          return observableThrowError(errorMessage);
+        }),);
       return this.observable;
     }
   }
@@ -53,16 +48,16 @@ export class JobService {
       return this.observable2;
     } else {
       this.observable2 = this._http
-        .get(this.url2)
-        .map(response => {
+        .get(this.url2).pipe(
+        map(response => {
           this.observable2 = null;
           this.data2 = response;
           return this.data2;
-        })
-        .catch(error => {
+        }),
+        catchError(error => {
           let errorMessage = `Une erreur ${error.status} est survenue en tentant de joindre ${error.url}`;
-          return Observable.throw(errorMessage);
-        });
+          return observableThrowError(errorMessage);
+        }),);
       return this.observable2;
     }
   }

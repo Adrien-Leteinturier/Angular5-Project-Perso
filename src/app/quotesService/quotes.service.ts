@@ -1,10 +1,6 @@
+
+import {tap, map} from 'rxjs/operators';
 import { Injectable } from '@angular/core';
-import { environment } from '../../environments/environment';
-import 'rxjs/add/operator/map'; 
-import 'rxjs/add/operator/do'; 
-import 'rxjs/add/observable/throw';
-import 'rxjs/add/observable/of';
-import 'rxjs/add/operator/catch';
 import {Observable} from 'rxjs/internal/Observable';
 import {HttpClient} from '@angular/common/http';
 
@@ -22,9 +18,9 @@ export class QuotesService {
   
   getQuotes(){
     this.random = Math.floor(Math.random() * 100);
-    return this._http.get(this.urlGetQuotes + this.random)
-    .map(data1 => data1)
-    .do(x => console.log(x));
+    return this._http.get(this.urlGetQuotes + this.random).pipe(
+    map(data1 => data1),
+    tap(x => console.log(x)),);
   }
   
 }

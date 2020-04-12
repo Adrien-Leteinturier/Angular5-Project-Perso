@@ -1,10 +1,8 @@
 import {Component, OnInit} from '@angular/core';
 import {Router} from '@angular/router';
 import {AuthService} from '../providers/auth.service';
-import {Observable} from 'rxjs/Observable';
+import {Observable} from 'rxjs';
 import * as firebase from 'firebase/app';
-import {HttpClient} from '@angular/common/http';
-import {WeatherService} from '../weatherApi/weather.service';
 
 @Component({
 
