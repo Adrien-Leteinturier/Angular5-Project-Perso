@@ -1,13 +1,8 @@
 
 import {tap, map} from 'rxjs/operators';
 import { Injectable } from '@angular/core';
-import { environment } from '../../environments/environment';
+import { environment } from '../../environments/environment.prod';
 import { HttpClient } from '@angular/common/http';
- 
- 
-
-
-
 import {Observable} from 'rxjs/internal/Observable';
 
 @Injectable()

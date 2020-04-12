@@ -24,7 +24,7 @@ import { NewsApiComponent } from './newsApi/news-api.component';
 import { NewsApiService } from './newsApi/news-api.service';
 import { InputValidsDirective } from './inputValids/input-valids.directive';
 import { ExponentialStrengthPipe } from './exponentielle-strength.pipe';
-import { environment} from '../environments/environment';
+import { environment} from '../environments/environment.prod';
 import { AuthService } from './providers/auth.service';
 import { AppRoutes } from './app.routes';
 import { HomeComponent } from './home/home.component';
