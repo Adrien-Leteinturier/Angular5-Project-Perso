@@ -22,11 +22,8 @@ import { BlotterService } from './blotterService/blotter.service';
 import { QuotesService } from './quotesService/quotes.service'
 import { NewsApiComponent } from './newsApi/news-api.component';
 import { NewsApiService } from './newsApi/news-api.service';
-
-
 import { InputValidsDirective } from './inputValids/input-valids.directive';
 import { ExponentialStrengthPipe } from './exponentielle-strength.pipe';
-
 import { environment} from '../environments/environment';
 import { AuthService } from './providers/auth.service';
 import { AppRoutes } from './app.routes';
