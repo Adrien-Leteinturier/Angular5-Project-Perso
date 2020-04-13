@@ -28,8 +28,8 @@ import {transition} from '@angular/animations';
         ])       
     ],
     selector: 'app-job',
-    templateUrl: 'Job.component.html',
-    styleUrls: ['Job.component.css']
+    templateUrl: './Job.component.html',
+    styleUrls: ['./Job.component.css']
 })
 
 
