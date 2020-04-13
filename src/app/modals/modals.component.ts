@@ -3,8 +3,8 @@ import { ModalService } from './modals.service';
 
 @Component({
     selector: 'app-modal',
-    templateUrl: 'modals.component.html',
-    styleUrls: ['modals.component.css']
+    templateUrl: './modals.component.html',
+    styleUrls: ['./modals.component.css']
 })
 export class ModalComponent implements OnInit {
   @Input() arrayModal;
