@@ -16,6 +16,7 @@ app.get('*', function(req, res, next) {
 });
 
 app.post('/action',function(req,res,next){
+  console.log(req);
   const sgMail = require('@sendgrid/mail');
   sgMail.setApiKey(process.env.SENDGRID_API_KEY);
   const msg = {
@@ -31,6 +32,7 @@ app.post('/action',function(req,res,next){
       console.log(error);
     }else{
       console.log("Mail envoyé avec succès!")
+      console.log(msg);
     }
   });
 });
