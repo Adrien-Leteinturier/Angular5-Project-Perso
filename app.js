@@ -11,35 +11,27 @@ app.use(bodyParser.urlencoded({'extended':'false'}));
 app.use(express.static(path.join(__dirname, 'dist')));
 
 
-var smtpTransport = mailer.createTransport("SMTP",{
-  service: "Gmail",
-  auth: {
-    user: process.env.NODEMAILER_MAIL,
-    pass: process.env.NODEMAILER_PASS
-  }
-});
-
-
 app.get('*', function(req, res, next) {
   res.sendFile(path.join(__dirname, 'dist/index.html'));
 });
 
 app.post('/action',function(req,res,next){
-  var mailOptions = {
-    from: req.body.email,
+  const sgMail = require('@sendgrid/mail');
+  sgMail.setApiKey(process.env.SENDGRID_API_KEY);
+  const msg = {
     to: 'adrienleteinturier@gmail.com',
+    from: req.body.email,
     subject: 'Message de ' + req.body.username +', Adrien Leteinturier site Web',
     text: req.body.message,
-    html: '<p>Message de'+ req.body.username +'</p><b>' + req.body.message + '</b>'
+    html: '<strong>and easy to do anywhere, even with Node.js</strong>',
   };
-  smtpTransport.sendMail(mailOptions, function(error, response){
+  sgMail.send(msg, function(error, response){
     if(error){
       console.log("Erreur lors de l'envoie du mail!");
       console.log(error);
     }else{
       console.log("Mail envoyé avec succès!")
     }
-    smtpTransport.close();
   });
 });
 
