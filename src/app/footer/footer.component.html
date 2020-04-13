@@ -6,7 +6,7 @@
 <div class="row app-footer-container" >
     <div class="col-xs-12 col-sm-5 col-md-5 col-lg-5 app-footer-section-left">
         <div id="blotter"></div>
-        <form [formGroup]="accountDetailsForm" novalidate (ngSubmit)="postMailMessage(accountDetailsForm.value)" novalidate>
+        <form [formGroup]="accountDetailsForm" (ngSubmit)="postMailMessage(accountDetailsForm.value)" novalidate>
             <div class="form-group">
                 <label for="email">{{labelInputs.email}}</label>
                 <input id="email" type="email" class="form-control" placeholder="{{labelInputs.email}}" formControlName="email" required [class.input-has-error]="accountDetailsForm.get('email').invalid && accountDetailsForm.get('email').touched">

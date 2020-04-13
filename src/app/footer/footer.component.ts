@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewContainerRef, ElementRef } from '@angular/core';
+import { Component, OnInit, ElementRef } from '@angular/core';
 import { FormControl , FormBuilder,  Validators, FormGroup } from '@angular/forms';
 import { ElementFormsService } from '../element-forms/element-forms.service';
 import { PresentationService } from '../presentation/presentation.service';
@@ -7,7 +7,7 @@ import { Socials } from '../presentation/socials';
 import { QuotesService } from '../quotesService/quotes.service';
 import account_validation_messages from '../config/error_inputs';
 import labels from '../config/labels';
-import {ToastaService, ToastaConfig, ToastOptions, ToastData} from 'ngx-toasta';
+import {ToastaService, ToastaConfig} from 'ngx-toasta';
 
 @Component({
   selector: 'app-footer',
@@ -15,13 +15,14 @@ import {ToastaService, ToastaConfig, ToastOptions, ToastData} from 'ngx-toasta';
   styleUrls: ['./footer.component.css']
 })
 export class FooterComponent implements OnInit {
+  
   constructor(
-    public _elementFormService: ElementFormsService,
-    public fb: FormBuilder, vcr: ViewContainerRef,
+    public elementFormService: ElementFormsService,
+    public fb: FormBuilder, 
     public el : ElementRef,
-    public _PresentationService: PresentationService,
-    public _BlotterService: BlotterService,
-    public _QuotesService: QuotesService,
+    public presentationService: PresentationService,
+    public blotterService: BlotterService,
+    public quotesService: QuotesService,
     public toastaService:ToastaService,
     public toastaConfig: ToastaConfig
   ) {
@@ -38,14 +39,14 @@ export class FooterComponent implements OnInit {
   
   ngOnInit() {
     this.createForms();
-    this._PresentationService.getSocialsFromAPIwithCache()
+    this.presentationService.getSocialsFromAPIwithCache()
     .subscribe( 
         res => this.socials = res,
         err => console.error(err.status)
     ); 
-    this._BlotterService.mainBlotterSliding('Contactez-moi','Alfa Slab One, cursive',45,'#7985A1',8,0.25,true)
+    this.blotterService.mainBlotterSliding('Contactez-moi','Alfa Slab One, cursive',45,'#7985A1',8,0.25,true)
 
-    this._QuotesService.getQuotes() 
+    this.quotesService.getQuotes() 
       .subscribe( 
         res => {
           this.quotesContent = res[0]['content'].replace('<p>','').replace('</p>','').replace('<br />');
@@ -56,9 +57,9 @@ export class FooterComponent implements OnInit {
       ); 
   }
   
-  postMailMessage = (formValue,accountDetailsForm) =>{
+  postMailMessage = (formValue) =>{
         if(this.accountDetailsForm.valid === true){
-          this._elementFormService.postContactForm(formValue);
+          this.elementFormService.postContactForm(formValue);
           this.accountDetailsForm.reset('');
           this.toastFc('succes','Votre message est envoyé');
         } else if(this.accountDetailsForm.valid === false || this.accountDetailsForm.value.username == "" || this.accountDetailsForm.value.email == "") {

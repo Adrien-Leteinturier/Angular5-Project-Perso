@@ -14,10 +14,10 @@ import * as firebase from 'firebase/app';
 
 export class OfficeComponent implements OnInit {
 
-  private user: Observable<firebase.User>;
-  private pseudo: String;
-  private email: String;
-  private photoUrl: String;
+  user: Observable<firebase.User>;
+  pseudo: string;
+  email: string;
+  photoUrl: string;
 
   constructor(private authService: AuthService, private router: Router) {
     this.user = this.authService.afAuth.authState;
@@ -27,7 +27,7 @@ export class OfficeComponent implements OnInit {
     );
   };
 
-  private addValueAuth(auth) {
+  addValueAuth(auth) {
     if (auth) {
       this.pseudo = auth.displayName;
       this.email = auth.email;
