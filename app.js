@@ -24,7 +24,7 @@ app.post('/action',function(req,res,next){
     from: req.body.email,
     subject: 'Message de ' + req.body.username +', Adrien Leteinturier site Web',
     text: req.body.message,
-    html: '<strong>and easy to do anywhere, even with Node.js</strong>',
+    html: req.body.message,
   };
   sgMail.send(msg, function(error, response){
     if(error){
