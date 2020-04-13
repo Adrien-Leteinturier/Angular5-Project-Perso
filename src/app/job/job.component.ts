@@ -6,7 +6,6 @@ import {animate, state, style, trigger} from '@angular/animations';
 import {transition} from '@angular/animations';
 
 @Component({
-    moduleId: module.id,
     animations: [
         trigger('displayElement',[
             
@@ -28,8 +27,8 @@ import {transition} from '@angular/animations';
         ])       
     ],
     selector: 'app-job',
-    templateUrl: './Job.component.html',
-    styleUrls: ['./Job.component.css']
+    templateUrl: './job.component.html',
+    styleUrls: ['./job.component.css']
 })
 
 
