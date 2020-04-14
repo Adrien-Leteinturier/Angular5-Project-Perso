@@ -20,8 +20,8 @@ app.post('/action',function(req,res,next){
   const sgMail = require('@sendgrid/mail');
   sgMail.setApiKey(process.env.SENDGRID_API_KEY);
   const msg = {
-    to: 'adrienleteinturier@gmail.com',
-    from: req.body.email,
+    to: req.body.email,
+    from: 'adrienleteinturier@gmail.com',
     subject: 'Message de ' + req.body.username +', Adrien Leteinturier site Web',
     text: req.body.message,
     html: req.body.message,
