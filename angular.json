@@ -36,8 +36,7 @@
               "src/assets/blotterJs/blotter.min.js",
               "src/assets/blotterJs/channelSplitMaterial.js",
               "src/assets/blotterJs/slidingDoorMaterial.js",
-              "src/assets/animText/code.js",
-              "https://platform.linkedin.com/badges/js/profile.js"
+              "src/assets/animText/code.js"
             ]
           },
           "configurations": {
