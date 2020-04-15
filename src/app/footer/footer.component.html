@@ -23,7 +23,7 @@
             </div>
             <div class="form-group">
                 <div *ngFor="let validation of validationConfig.message">
-                <label for="message">{{labelInputs.message}}</label>
+                    <label for="message">{{labelInputs.message}}</label>
                     <textarea id="message" type="message" class="form-control" placeholder="{{labelInputs.message}}" formControlName="message" [class.input-has-error]="accountDetailsForm.get('message').hasError(validation.type)"></textarea>
                     <small id="messageHelpId" class="form-text text-muted" [class.has-error]="accountDetailsForm.get('message').hasError(validation.type)" *ngIf="accountDetailsForm.get('message').hasError(validation.type) && (accountDetailsForm.get('message').dirty || accountDetailsForm.get('message').touched)">{{validation.message}}<i class="fas fa-exclamation-triangle has-error absolute-input-warning-ico"></i></small>
                 </div>                
@@ -45,10 +45,7 @@
         </div>
     </div>
     <div class="col-xs-12 col-sm-5 col-md-5 col-lg-5 app-footer-section-right">
-        <div class="app-footer-section-right-map">
-            <h2 class="opening text-center">{{quotesContent}}</h2>
-            <a href="{{quotesLink}}" target="_blank"><cite>{{quotesTitle}}</cite></a>
-        </div>
+        <div class="LI-profile-badge"  data-version="v1" data-size="large" data-locale="fr_FR" data-type="horizontal" data-theme="dark" data-vanity="adrien-leteinturier"><a class="LI-simple-link" href='https://fr.linkedin.com/in/adrien-leteinturier?trk=profile-badge'>Adrien Leteinturier</a></div>
     </div>
     <ngx-toasta [position]="'bottom-center'"></ngx-toasta>
 </div> 

@@ -74,7 +74,6 @@ export class FooterComponent implements OnInit {
       username: new FormControl('', Validators.compose([
        Validators.maxLength(25),
        Validators.minLength(5),
-       Validators.pattern('^(?=.*[a-zA-Z])(?=.*[0-9])[a-zA-Z0-9]+$'),
        Validators.required
       ])),
       email: new FormControl('', Validators.compose([
