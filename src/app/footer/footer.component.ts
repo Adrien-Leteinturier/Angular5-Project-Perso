@@ -45,16 +45,6 @@ export class FooterComponent implements OnInit {
         err => console.error(err.status)
     ); 
     this.blotterService.mainBlotterSliding('Contactez-moi','Alfa Slab One, cursive',45,'#7985A1',8,0.25,true)
-
-    this.quotesService.getQuotes() 
-      .subscribe( 
-        res => {
-          this.quotesContent = res[0]['content'].replace('<p>','').replace('</p>','').replace('<br />');
-          this.quotesTitle = res[0]['title'];
-          this.quotesLink = res[0]['link'];
-        },
-        err => console.error(err.status)
-      ); 
   }
   
   postMailMessage = (formValue) =>{
