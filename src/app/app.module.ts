@@ -28,6 +28,7 @@ import {AngularFireModule} from '@angular/fire';
 import {AngularFireDatabaseModule} from '@angular/fire/database-deprecated';
 import {AngularFireAuthModule} from '@angular/fire/auth';
 import { homeModule } from './home/home.module';
+import {QuicklinkStrategy, QuicklinkModule} from 'ngx-quicklink';
 
 const appRoutes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -55,7 +56,9 @@ const appRoutes: Routes = [
     AngularFireDatabaseModule,
     AngularFireModule,
     AngularFireAuthModule,
-    RouterModule.forRoot(appRoutes),
+    RouterModule.forRoot(appRoutes, {
+      preloadingStrategy: QuicklinkStrategy
+    }),
     ReactiveFormsModule
   ],
   providers:  [
