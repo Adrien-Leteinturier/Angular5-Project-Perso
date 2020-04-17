@@ -56,6 +56,7 @@ const appRoutes: Routes = [
     AngularFireDatabaseModule,
     AngularFireModule,
     AngularFireAuthModule,
+    QuicklinkModule,
     RouterModule.forRoot(appRoutes, {
       preloadingStrategy: QuicklinkStrategy
     }),

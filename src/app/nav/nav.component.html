@@ -1,31 +1,26 @@
-
-  <div class=" mdl-layout mdl-js-layout mdl-layout--fixed-header">
-    <header class="mdl-layout__header app-nav-link" >
-      <div class="mdl-layout__header-row">
-        <!-- Title -->
-        <img src="assets/images/app-nav-logo.png" alt="Logo Adrien Leteinturier - Développeur web" width="50px">
-        <h1 class="mdl-layout-title">Adrien Leteinturier - Développeur web</h1>
-        <!-- Add spacer, to align navigation to the right -->
-        <div class="mdl-layout-spacer"></div>
-        <!-- Navigation. We hide it in small screens. -->
-        <nav class="mdl-navigation mdl-layout--large-screen-only">
-          <a class="mdl-navigation__link" (click)="login()">Services</a>
-          <a class="mdl-navigation__link" href="#projects">Projects</a>
-          <a class="mdl-navigation__link" href="#jobs">Job Expériences</a>
-          <a class="mdl-navigation__link" href="#contact">Contact</a>
-        </nav>
-      </div>
-    </header>
-    <div class="mdl-layout__drawer mdl-layout--small-screen-only">
-      <span class="mdl-layout-title">Navigation</span>
-      <nav class="mdl-navigation">
-          <a class="mdl-navigation__link" (click)="login()">Services</a>
-          <a class="mdl-navigation__link" href="#projects">Projects</a>
-          <a class="mdl-navigation__link" href="#jobs">Job Expériences</a>
-          <a class="mdl-navigation__link" href="#contact">Contact</a>
-      </nav>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">
+      <img class="float-left" src="assets/images/app-nav-logo.png" alt="Logo Adrien Leteinturier - Développeur web" width="50px">
+      <h1 class="mdl-layout-title float-right">Adrien Leteinturier <br><b>Développeur web</b></h1>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" (click)="login()">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#projects">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#jobs">Job Expériences</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+      </ul>
     </div>
-    <main class="mdl-layout__content">
-      <div class="page-content"></div>
-    </main>
-  </div>  
+  </nav>

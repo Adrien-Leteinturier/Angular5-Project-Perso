@@ -1,6 +1,6 @@
 h1{
-    margin-left: 5px;
-    font-weight: bold;
+    margin: 3px 0 0 10px;
+    color: white;
 }
 
 .app-nav-link{
@@ -8,7 +8,7 @@ h1{
     font-size: 18px;
 }
 
-.app-nav-link a{
+.nav-link{
     margin-left:20px;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -18,7 +18,7 @@ h1{
     transition: border-top 1s, border-bottom 1s, letter-spacing 1s;
 }
 
-.app-nav-link a:hover {
+.nav-link:hover {
     letter-spacing:4px;
     color: white;
     
