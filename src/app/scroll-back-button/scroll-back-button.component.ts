@@ -20,8 +20,9 @@ export class ScrollBackButtonComponent implements OnInit {
 
   public windowScrollDisplay() {
     var self = this;
-    this.window.addEventListener('scroll',function(){
-      if(this.window.scrollY > 0){
+    const main = document.getElementById('main-content');
+    main.addEventListener('scroll',function(){
+      if(main.scrollTop > 0){
         self._elementRef.nativeElement.childNodes["0"].firstElementChild.style.opacity = 1;
       } else {
         self._elementRef.nativeElement.childNodes["0"].firstElementChild.style.opacity = 0;      

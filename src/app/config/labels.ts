@@ -2,8 +2,8 @@ const labels = {
    'input':[
        {
         'email': 'Votre e-mail',
-        'username': 'Votre pseudo / nom',
-        'message': 'Votre message'
+        'username': 'Votre nom',
+        'message': 'Vos besoins'
        }
    ] 
 }

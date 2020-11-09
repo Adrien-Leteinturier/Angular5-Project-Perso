@@ -1,21 +1,64 @@
 .app-skills{
-    background-color:"#1A1A1A";
-    margin: 200px 10px 200px 10px;
+    margin: 90px 0 0 0;
 }
 
-.app-skills-item span{
-    color: white;
-    display: block;
-    font-size: 1.8em;
-    letter-spacing: 0.5px;
-}
-
-.app-skills-item img{
+.illustration{
     width: 80%;
 }
 
-@media screen and (max-width: 640px) {
-    .app-skills-item span{
-        font-size: 1.3em;
+.logo{
+    width: 150px;
+    margin: 10px;
+}
+
+.text-affaire p{
+    color: #34353d;
+    font-size: 1.3em;
+}
+
+form{
+    background-color: rgb(66, 67, 173);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(32,33,36,.28);
+}
+
+form button{
+    background-color: white;
+}
+
+label{
+    color: white;
+}
+
+.text-affaire{
+    margin: 100px 220px 0 0;
+}
+
+form{
+    margin: 50px 220px 0 0;
+}
+
+form h5{
+    color: white;
+    margin: 0 0 10px 0;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+    .text-affaire p{
+        text-align: center;
+        font-size: 1.1em;
     }
-  }
+
+    .text-affaire, form{
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .text-affaire, form{
+        margin: auto;
+    }
+}
+

@@ -1,5 +1,6 @@
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { TestBed, inject } from '@angular/core/testing';
-import { HttpClient, ConnectionBackend, HttpClientModule } from '@angular/http';
+import { ConnectionBackend } from '@angular/http';
 import { ElementFormsService } from './element-forms.service';
 
 
@@ -22,11 +23,6 @@ describe('ElementFormsService', () => {
   it('should be created', inject([ElementFormsService], (service: ElementFormsService) => {
     expect(service).toBeTruthy();
   }));
-
-/*   it('should use ValueService', () => {
-    service = TestBed.get(elementFormService);
-    expect(service.postContactForm()).toBe('real value');
-  }); */
 
 });
 

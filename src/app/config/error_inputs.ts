@@ -5,9 +5,7 @@ const account_validation_messages = {
     ],
     'username': [
       { type: 'required', message: 'Votre nom est obligatoire' },
-      { type: 'minlength', message: 'Votre nom doit etre composé d\'un minimum de 5 caractères'},
-      { type: 'maxlength', message: 'Votre nom ne doit pas depasser 25 caractères' },
-      { type: 'pattern', message: 'Votre nom doit être composé de lettres et de chiffres' }
+      { type: 'minlength', message: 'Votre nom doit etre composé d\'un minimum de 5 caractères'}
     ],  
     'message':[
       {type: 'minlength', message: 'Votre messsage doit être composé d\'un minimum de 5 caractères'}

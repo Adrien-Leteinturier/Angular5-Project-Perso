@@ -14,11 +14,12 @@ export class HomeComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-
+    const main = document.getElementById('main-content');
     $('a[href^="#"]').click(function(){  
+      console.log('yeah')
       var id = $(this).attr("href");
       var offset = $(id).offset().top 
-      $('html, body').animate({scrollTop: offset}, 'slow'); 
+      $(main).animate({scrollTop: offset}, 'slow'); 
       return false;  
     }); 
 

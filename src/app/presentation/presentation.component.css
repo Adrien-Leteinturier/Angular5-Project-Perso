@@ -1,136 +1,63 @@
-.mdl-card{
-    width: 100%;
-}
-.app-pres {
-    background-image: url('../../assets/images/img-pres.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 1000px;
-    background-position: center;
+img{
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
 }
 
-.app-pres-logo {
-    
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#6639b6+0,000000+52 */
-    background: #7985A1; /* Old browsers */
-    background: -moz-linear-gradient(-45deg, #7985A1 0%, #000000 52%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(-45deg, #7985A1 0%,#000000 52%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(135deg, #7985A1 0%,#000000 52%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7985A1', endColorstr='#000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-    margin-top: 50px;
-    
-    position: absolute;
-    top: 300px;
+.app-pres{
+    margin: 40px 0 0 0;
 }
 
-.app-pres-logo h1{
-    font-family: 'Open Sans', sans-serif;
-    color: white;
-    margin-top: 0;
-    margin-bottom: 0;
-}
-.app-pres-logo h2 span{
-    font-size: 5.5vw;
-    display: inline-block;
+.text-introduction{
+    margin: 100px 0 0 220px;
 }
 
-.app-pres-logo h2 span:first-child{
-    font-family: 'Alfa Slab One', cursive;
-    color: white;
+.text-introduction p{
+    color: #34353d;
+    font-size: 1.3em;
 }
 
-.app-pres-logo h2 span:nth-child(2){
-    background: -webkit-linear-gradient(to left, #7985A1, white);
-    background: linear-gradient(to left, #7985A1, white);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-size: 20vw;
-    display: inline;
-}
-
-.app-pres-logo h2 span:last-child{
-    font-family: 'Righteous', cursive;
-    color: #7985A1;
-}
-
-.app-pres-logo a{
-    text-decoration: none;
-    color: white;
-    cursor:pointer;
-}
-
-
-.app-pres-socials a
-{
-    color: white;
-    display: inline-block;
-    font-size: 42px;
-    margin-bottom: 10px;
-    margin: 0 15px 10px 0;
-    transition: all 0.5s ease-out;
-}
-
-.app-pres-socials a:hover
-{
-    opacity: 1;
-    color: #7985A1;
-    transform: rotate(60deg);
-    transform: scale(1.5);
-}
-
-
-.ml5 {
-    
-    font-weight: 300;
-    font-size: 120px;
-    color: #402d2d;
-}
-
-.ml5 .text-wrapper {
-    position: relative;
-    display: inline-block;
-    padding-top: 0.1em;
-    padding-right: 0.05em;
-    padding-bottom: 0.15em;
+h1{
+    font-size: 6em;
     line-height: 1em;
 }
 
-.ml5 .line {
-    position: absolute;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-    height: 3px;
-    width: 100%;
-    background-color: #402d2d;
-    transform-origin: 0.5 0;
+h1 span{
+    display: block;
 }
 
-.ml5 .ampersand {
-    font-family: Baskerville, "EB Garamond", serif;
-    font-style: italic;
-    font-weight: 400;
-    width: 1em;
-    margin-right: -0.1em;
-    margin-left: -0.1em;
+h1 span:first-child{
+    font-family: 'Righteous', cursive;
 }
 
-.ml5 .letters {
-    display: inline-block;
-    opacity: 0;
+h1 span:last-child{
+    font-family: 'Alfa Slab One', cursive;
 }
 
-
-.container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
+h1 span{
+    text-transform: capitalize;
 }
 
-svg {
-    max-width: 8rem;
-    width: 100%;
-    height: auto;
+@media screen and (max-width: 768px)
+{
+    h1{
+        font-size: 4em;
+        text-align: center;
+    }
+
+    .text-introduction{
+        margin: auto;
+    }
+
+    .text-introduction p{
+        text-align: center;
+        font-size: 1.1em;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .text-introduction{
+        margin: auto;
+    }
 }

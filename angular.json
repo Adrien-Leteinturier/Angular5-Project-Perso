@@ -30,13 +30,10 @@
               "node_modules/ngx-toasta/styles/style-material.css"
             ],
             "scripts": [
+              "node_modules/scrollreveal/dist/scrollreveal.js",
               "node_modules/material-design-lite/material.js",
               "node_modules/jquery/dist/jquery.min.js",
-              "node_modules/bootstrap/dist/js/bootstrap.min.js",
-              "src/assets/blotterJs/blotter.min.js",
-              "src/assets/blotterJs/channelSplitMaterial.js",
-              "src/assets/blotterJs/slidingDoorMaterial.js",
-              "src/assets/animText/code.js"
+              "node_modules/bootstrap/dist/js/bootstrap.min.js"
             ]
           },
           "configurations": {
