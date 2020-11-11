@@ -2,7 +2,7 @@ import {Component, OnInit} from '@angular/core';
 import {Router} from '@angular/router';
 import {AuthService} from '../providers/auth.service';
 import {Observable} from 'rxjs';
-import firebase from 'firebase/app';
+import firebase from 'firebase';
 
 @Component({
 

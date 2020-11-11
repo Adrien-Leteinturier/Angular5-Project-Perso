@@ -1,117 +1,97 @@
 .app-job{
-    margin: 200px 10px 200px 10px; 
-}
-
-.app-job-content{
-    background-color: #7985A1;
     padding: 20px;
-    margin-bottom: 50px;    
-    margin-top: 30px;
-    margin-left: 5px;
-    margin-right: 5px;
-    text-align: center;
-    border-radius: 3px;  
-    height: 100%;
-    cursor: pointer;
-    overflow: hidden;
+    margin: 90px 0 0;
+    background-color: #4243ad;
+    padding: 20px 0 40px 0;
 }
 
+.text-job{
+    margin: 130px 220px 0 0;
+}
 
-.app-job-content span:first-child{
-    font-size: 19px;
+.text-job p{
     color: white;
-    font-weight: 300px;
+    font-size: 1.3em;
 }
 
-.app-job-content p{
-    font-family: 'Open Sans', sans-serif;
-    opacity: 0;
-    text-align: left;
-}
-
-.app-job-content-ico{
-    font-size: 30px;
-    margin-right: 5px;
-    color: #333;
-}
-
-.app-job-content-ico:hover{
-    font-size: 30px;
-    color: black;
-}
-
-
-.app-job-content-p-displayed{
-    opacity: 1 !important;
-    transition: opacity 2000ms ease-out; 
-}
-
-.app-job-content-span{
-    color: white;
-}
-
-.app-job-content img{
-    opacity: 0;
-    width: 50%;
-}
-
-.app-job-img-displayed{
-    opacity: 1 !important;
-    width: 100%;    
-    transition: opacity 2000ms ease-out; 
-}
-.app-job-techno > i{
-    color: white;
-    font-size: 40px;
-    display: inline-block;
-}
-
-.close {
-    position: absolute;
-    display: none;
-    margin-left: 5px;
-    right: 9px;
-    top: 32px;
-    width: 32px;
-    height: 32px;
-    opacity: 0.3;
-    z-index: 1;
-}
-.close-displayed{
-    display: block;
-}
-.close:hover {
-    opacity: 1;
-}
-
-
-
-.app-job-title-separate{
-    margin: 20px 0px 0px 15px;
-    float: left;
-}
-
-.app-job-title-separate h2{
-    color: white;
-    font-size: 40px;
+h4{
+    background-color: white;
+    color : #4243ad;
+    padding: 5px;
     font-weight: bold;
 }
 
-.hr-custom-title{
+.losange {
+    margin: 30px 70px 30px 70px;
+    transform-origin: 50% 50%;
+    width: 250px;
+    height: 250px;
     background-color: white;
-    height: 3px;
-    width: 270px;
-    margin-top: 13px;
+    display: inline-block;
+    box-shadow: 0 4px 6px rgba(32,33,36,.28);
+    cursor: pointer;
 }
 
-.title{
-    float: left;
-    color: white;
-    margin-left: 5px;
+.losange-border {
+    background-size: contain;
+    background-repeat: no-repeat;
+    transform-origin: 50% 50%;
+    width: 250px;
+    height: 250px;
+    background-color: white;
+    display: inline-block;
+    outline: 3px solid rgb(66, 67, 173);
+    outline-offset: -10px;
+    overflow: hidden;
+    transition: all 500ms ease;
 }
 
-@media screen and (max-width: 640px) {
-    .app-job-title-separate h2{
-        font-size: 15px;
+.losange {
+    transform: rotate(45deg) translateY(10px);
+}
+
+.losange:first-child img{
+    width: 380px;
+    transform: rotate(315deg);
+    margin: 20px 0px 0px -2px;
+    position: relative;
+    right: 45px;
+    top: 30px;
+}
+
+.losange:nth-child(2) img{
+    width: 315px;
+    transform: rotate(-43deg);
+    position: relative;
+    right: 38px;
+    top: 0px;
+}
+
+.losange-border:hover{
+    transform: rotate(-45deg);
+    outline: inherit;
+    border: 3px solid white;
+}
+
+@media screen and (max-width: 768px)
+{
+    .text-job{
+        margin: auto;
     }
-  }
+
+    .text-job p{
+        text-align: center;
+        font-size: 1.1em;
+    }
+
+    h4{
+        margin: 40px 0 0 0;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .text-job{
+        margin: 60px 0 0 0;
+    }
+}

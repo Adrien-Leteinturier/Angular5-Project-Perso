@@ -10,7 +10,7 @@ img{
 }
 
 .text-introduction{
-    margin: 100px 0 0 220px;
+    margin: 180px 0 0 220px;
 }
 
 .text-introduction p{
@@ -24,15 +24,18 @@ h1{
 }
 
 h1 span{
-    display: block;
+    display: inline-block;
 }
 
 h1 span:first-child{
     font-family: 'Righteous', cursive;
+    margin: 0 20px 0 0;
+    color: #34353d;
 }
 
 h1 span:last-child{
     font-family: 'Alfa Slab One', cursive;
+    color: rgb(66, 67, 173);
 }
 
 h1 span{

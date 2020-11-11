@@ -1,110 +1,38 @@
 <div class="app-job">
-    <div class="row">
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
-            <h2 class="title">Web & Prints Projects</h2>
-            <div class="app-job-title-separate">
-                <div class="rings">
-                    <span><span></span></span>
-                    <span><span></span></span>
-                    <span><span></span></span>
-                </div>
+    <div class="row row-no-padding">
+        <div class="col-xl-7 col-lg-7 col-md-12 col-xs-12 text-center">
+            <div *ngFor="let item of jobs" class="container-job-cube losange">
+                <div class="losange-border" (click)="clickLosangeElement(item.link)"
+                [ngStyle]="item.style"></div>
+            </div>
+        </div>
+        <div class="col-xl-5 col-lg-5 col-md-12 col-xs-12">
+            <h4>Cliquez sur un losange pour découvrir</h4>
+            <div class="text-job">
+                <p>
+                    Parmi les différents projets réalisés pendant mon parcours,<br> j'aimerais vous en presenter quelques-uns.<br><br>
+                     - Write It Social : mon premier projet abouti, réalisé pour obtenir mon diplôme de développeur.<br><br>
+                     - Cafee : la création d'une identité visuelle pour une société spécialisé dans la vente de café.<br><br>
+                     - Fête de la moto 2016 : la réalisation d'une affiche qui sera mon projet print préféré.<br><br>
+                     - TopTen : la réalisation d'un site internet pour une société de foot en salle, projet complet, création de l'identité visuelle (logo, couleur, texte) 
+                    et la création du socle technique pour rendre celui-ci diffusable (hébergement, nom de domaine, implémentation HTML/CSS/JS).   
+                </p>
             </div>
         </div>
     </div>
-    <div>
-        <div class="row">
-            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3" *ngFor="let job of jobs; trackBy let i=index">
-                <div class="close" (click)="outDisplay(job)" [ngClass]="{'close-displayed': job.stateAnim == 'displayOk'}">
-                    <i class="fas fa-times"></i>
-                </div>
-                <div class="app-job-content" (click)="display(job)" [@displayElement]="job.stateAnim">
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                            <span [ngClass]="{'app-job-content-span': job.stateAnim == 'displayOk'}">{{job.title}}</span>
-                            <p [ngClass]="{'app-job-content-p-displayed': job.stateAnim == 'displayOk'}">{{job.description}}<br>
-                                <a *ngIf="job.iconGit == true" href="{{job.gitLink}}" title="Git-Hub"> <i class="fab fa-github-square app-job-content-ico" aria-hidden="true"></i></a>
-                                <a *ngIf="job.viewProjet == true" data-toggle="modal" href="{{job.link}}" [attr.data-target]="'#' + job.modalId"><i class="fas fa-eye app-job-content-ico"></i></a>  
-                            </p>
-                            
-                        </div>
-                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                            <img src={{job.logo}} alt="" class="img-job app-job-img-displayed">
-                        </div>
-                    </div>
-                    <hr>
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="app-job-techno">
-                                <ng-container *ngFor="let arrayJob of job.imgContent;">
-                                    <i *ngIf="arrayJob.classIcon" class="{{arrayJob.classIcon}}"></i>                                                                                            
-                                </ng-container>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>          
-        </div>
-        
-        <div class="row">       
-            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3" *ngFor="let print of prints; trackBy let i=index">
-                <div class="close" (click)="outDisplay2(print)" [ngClass]="{'close-displayed': print.stateAnim == 'displayOk'}">
-                    <i class="fas fa-times"></i>
-                </div>
-                <div class="app-job-content" (click)="display2(print)" [@displayElement]="print.stateAnim">
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                            <span [ngClass]="{'app-job-content-span': print.stateAnim == 'displayOk'}">{{print.title}}</span>
-                            <p [ngClass]="{'app-job-content-p-displayed': print.stateAnim == 'displayOk'}">{{print.description}}<br>
-                                <a *ngIf="print.viewProjet == true" data-toggle="modal" href="{{print.link}}" [attr.data-target]="'#' + print.modalId"><i class="fa fa-eye app-job-content-ico"></i></a>  
-                            </p>
-                            
-                        </div>
-                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                            <img src={{print.logo}} alt="" class="img-job app-job-img-displayed">
-                        </div>
-                    </div>
-                    <hr>
-                    <div class="app-job-techno" *ngFor="let arrayPrint of print.imgContent;">
-                        <i *ngIf="arrayPrint.classIcon1" class="{{arrayPrint.classIcon}}"></i>                                                                                            
-                    </div>
-                </div>
-            </div>          
-        </div>    
-    </div>
-    
-    <!-- Modal Write it social -->
-    
-    <div class="modal fade" id="modalWriteItSocial" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header text-center">
-                    <img src="../assets/images/logoWriteItSocial.png" alt="" width="33%">
-                </div>
-                <div class="modal-body">
-                    <video width="100%" autoplay>
-                        <source
-                        src="../assets/videos/writeitsocial.webm"
-                        type="video/webm">
-                        <source
-                        src="../assets/videos/writeitsocial.mp4"
-                        type="video/mp4">
-                        <source
-                        src="../assets/videos/writeitsocial.mov"
-                        type="video/mov">
-                        Votre navigateur ne permet pas de lire les vidéos HTML5.
-                    </video>
-                </div>
-                <div class="row">
-                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                        <img src="../assets/images/mockup-write-it-social.png" width="100%" alt="Write it social">
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    <app-modal [arrayModal]="prints"></app-modal>
 </div>
+<app-modal [arrayModal]="jobs"></app-modal>
+
+
+<!-- <video width="100%" autoplay>
+    <source
+    src="../assets/videos/writeitsocial.webm"
+    type="video/webm">
+    <source
+    src="../assets/videos/writeitsocial.mp4"
+    type="video/mp4">
+    <source
+    src="../assets/videos/writeitsocial.mov"
+    type="video/mov">
+    Votre navigateur ne permet pas de lire les vidéos HTML5.
+</video> -->

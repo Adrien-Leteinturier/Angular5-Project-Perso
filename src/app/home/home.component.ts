@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AuthService } from '../providers/auth.service';
 
 declare var anime: any;
 declare var jquery:any;
@@ -11,7 +12,11 @@ declare var $ :any;
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  constructor(public authService: AuthService) { }
+    
+  login() {
+    this.authService.loginWithGoogle();
+  }
 
   ngOnInit() {
     const main = document.getElementById('main-content');

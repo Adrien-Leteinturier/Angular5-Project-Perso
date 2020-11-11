@@ -2,7 +2,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule, Routes } from '@angular/router';
-import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { OfficeComponent } from './office/office.component';
@@ -24,6 +23,7 @@ import { HomeComponent } from './home/home.component';
 import {AngularFireModule} from '@angular/fire';
 import {AngularFireAuthModule} from '@angular/fire/auth';
 import { homeModule } from './home/home.module';
+import { NgsRevealModule } from 'ngx-scrollreveal';
 
 const appRoutes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -50,7 +50,7 @@ const appRoutes: Routes = [
     AngularFireModule,
     AngularFireAuthModule,
     RouterModule.forRoot(appRoutes),
-    ReactiveFormsModule
+    NgsRevealModule
   ],
   providers:  [
     AuthService,

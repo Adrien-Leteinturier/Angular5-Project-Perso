@@ -48,3 +48,11 @@
 .mdl-layout__header .mdl-layout__drawer-button i {
     color: #000;
 }
+
+@media screen and (min-width: 768px)
+{
+    .container-fluid{
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+}

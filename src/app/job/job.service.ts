@@ -14,7 +14,6 @@ export class JobService {
   public observable: Observable<any>;
   public observable2: Observable<any>;
   public url: string = '../assets/json/jobs.json';
-  public url2: string = '../assets/json/prints.json';
 
   constructor(public _http: HttpClient) {
 
@@ -38,27 +37,6 @@ export class JobService {
           return observableThrowError(errorMessage);
         }),);
       return this.observable;
-    }
-  }
-
-  getPrintsFromAPIwithCache() {
-    if (this.data2) {
-      return of(this.data2);
-    } else if (this.observable2) {
-      return this.observable2;
-    } else {
-      this.observable2 = this._http
-        .get(this.url2).pipe(
-        map(response => {
-          this.observable2 = null;
-          this.data2 = response;
-          return this.data2;
-        }),
-        catchError(error => {
-          let errorMessage = `Une erreur ${error.status} est survenue en tentant de joindre ${error.url}`;
-          return observableThrowError(errorMessage);
-        }),);
-      return this.observable2;
     }
   }
 }
