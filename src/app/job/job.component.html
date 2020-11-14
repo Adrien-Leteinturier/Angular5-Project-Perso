@@ -1,8 +1,8 @@
 <div class="app-job">
     <div class="row row-no-padding">
         <div class="col-xl-7 col-lg-7 col-md-12 col-xs-12 text-center">
-            <div *ngFor="let item of jobs" class="container-job-cube losange">
-                <div class="losange-border" (click)="clickLosangeElement(item.link)"
+            <div *ngFor="let item of jobs; let index = index;"  class="container-job-cube losange">
+                <div class="losange-border" [routerLink]="['/job-content', index]" (click)="clickLosangeElement(item.link)"
                 [ngStyle]="item.style"></div>
             </div>
         </div>
@@ -21,7 +21,6 @@
         </div>
     </div>
 </div>
-<app-modal [arrayModal]="jobs"></app-modal>
 
 
 <!-- <video width="100%" autoplay>

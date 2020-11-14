@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NavigationExtras, Router } from '@angular/router';
 import { Job } from './job';
 import { JobService } from './job.service';
 
@@ -17,17 +18,18 @@ export class JobComponent{
     ngOnInit() { // pour initialiser les données du servcice
         this.callJobServiceFor(); 
     }
-    
-    private callJobServiceFor() {
-        this._jobService.getJobsFromAPIwithCache()
-        .subscribe(res => this.jobs = res, err => console.error(err.status));
-    }
-
+        
     clickLosangeElement(link:string){
         if(link){
             window.open(link, '_blank');
         }
     }
+    
+    private callJobServiceFor() {
+        this._jobService.getJobsFromAPIwithCache()
+        .subscribe(res => this.jobs = res, err => console.error(err.status));
+    }
+    
 }
 
 

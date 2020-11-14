@@ -52,13 +52,13 @@ form h5{
     }
 
     .text-affaire, form{
-        margin: auto;
+        margin: 20px;
     }
 }
 
 @media screen and (max-width: 1200px) {
     .text-affaire, form{
-        margin: auto;
+        margin: 0 20px 0 20px;
     }
 }
 

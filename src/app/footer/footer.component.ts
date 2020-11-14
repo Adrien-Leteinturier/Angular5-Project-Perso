@@ -17,9 +17,6 @@ export class FooterComponent implements OnInit {
   ) {
   }
 
-  accountDetailsForm: FormGroup;
-  validationConfig = account_validation_messages;
-  labelInputs = labels.input[0];
   socials: Socials[];
   
   ngOnInit() {
@@ -28,7 +25,6 @@ export class FooterComponent implements OnInit {
         res => this.socials = res,
         err => console.error(err.status)
     ); 
-
   }
 
 };

@@ -1,5 +1,7 @@
 import { Component, Input, OnInit, HostListener, OnChanges, ViewChild, ElementRef } from '@angular/core';
-import { ModalService } from './modals.service';
+import * as $ from 'jquery';
+
+declare var $ :any; 
 
 @Component({
     selector: 'app-modal',

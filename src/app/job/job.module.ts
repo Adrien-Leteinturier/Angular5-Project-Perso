@@ -3,11 +3,11 @@ import { CommonModule, NgClass } from '@angular/common';
 import { JobComponent } from "./job.component";
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { JobService } from './job.service';
-import { ModalComponent } from '../modals/modals.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
-    imports: [ CommonModule,BrowserAnimationsModule ],
-    declarations: [ JobComponent, ModalComponent ],
+    imports: [ CommonModule,BrowserAnimationsModule, RouterModule ],
+    declarations: [ JobComponent ],
     exports: [ JobComponent ],
     providers: [ JobService ]
 })

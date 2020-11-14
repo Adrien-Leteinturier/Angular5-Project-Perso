@@ -1,61 +1,46 @@
 .app-exps{
-    margin: 200px 10px 200px 10px; 
+    margin: 90px 0 0 0;
 }
 
-.app-exps-container{
-    background-color: white;
-    margin-top: 50px;
-    margin-left: 5px;
-    margin-right: 5px;
+img{
+    margin: 0 0 0 200px;
+    width: 45%;
 }
 
-.app-exps-img-pastille{
-    background-color: #7985A1;
-    padding: 15px;
-    border-radius: 40px;
+.text-exps{
+    margin: 300px 0 0 220px;
 }
 
-.app-exps-title-separate{
-    margin: 20px 0px 0px 15px;
-    float: left;
+.text-exps p{
+    color: #34353d;
+    font-size: 1.3em;
 }
 
-.hr-custom-title{
-    background-color: white;
-    height: 3px;
-    width: 270px;
-    margin-top: 13px;
+.fa-linkedin {
+    font-size: 2em;
+    position: relative;
+    top: 8px;
 }
 
-.app-exps-container-logo-exps div{
-    display: inline-block;
-    margin: 20px 5px 5px 5px;
-}
-.app-exps-container-logo-exps p{
-    color:#c9c9c9;
-    font-weight: 600;
-    font-size: 18px;
-    margin-top: 10px;
-}
-.app-exps-container-logo-exps p:last-child{
-    font-size: 14px;
-    color: #7985A1;
-}
-
-.title{
-    float: left;
-    color: white;
-    margin-left: 5px;
-}
-
-@media screen and (max-width: 640px) {
-    .app-exps-container-logo-exps p{
-        font-size: 12px;
+@media screen and (max-width: 768px)
+{
+    .text-exps{
+        margin: auto !important;
     }
-    .app-exps-container-logo-exps p:last-child{
-        font-size: 12px;
+
+    .text-exps p{
+        text-align: center;
+        font-size: 1.1em;
     }
-    .app-exps-title-separate h2{
-        font-size: 15px;
+
+    img{
+        margin: 0 0 0 200px;
+        width: 45%;
     }
-  }
+}
+
+@media screen and (max-width: 1200px) {
+    .text-exps{
+        margin: 50px 0 0 20px;
+    }
+}

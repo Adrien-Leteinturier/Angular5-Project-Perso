@@ -1,0 +1,54 @@
+header{
+    background-color: rgb(66, 67, 173);
+}
+
+h1{
+    font-family: 'Alfa Slab One', cursive;
+    color: rgb(66, 67, 173);
+}
+
+.content{
+    margin: 0 0 20px 0;
+}
+
+.content p{
+    margin: 50px 0 0 220px;
+    color: #34353d;
+    font-size: 1.3em;
+}
+
+.content-logo{
+    margin: 20px 0 0 220px;
+}
+
+.content-logo i{
+    font-size: 5em;
+    color: rgb(66, 67, 173);
+    margin: 0 0 0 10px;
+}
+
+@media screen and (max-width: 768px)
+{
+    h1{
+        font-size: 3em;
+        text-align: center;
+    }
+    .content p, .content-logo{
+        margin: 10px;
+    }
+
+    .content-logo i{
+        font-size: 3em;
+    }
+
+    .content p, .content-logo{
+        text-align: center;
+        font-size: 1.1em;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .content p{
+        margin: 10px;
+    }
+}

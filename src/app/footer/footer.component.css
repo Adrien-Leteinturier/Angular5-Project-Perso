@@ -1,3 +1,16 @@
+.app-footer-container{
+    padding: 50px;
+    background-color: #4243ad;
+    margin: 90px 0 0 0;
+}
 
+.app-footer-container a{
+    font-size: 5em;
+    margin: 20px;
+    color: white;
+}
 
+.app-footer-container a:hover{
+    color: white;
+}
 

@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { Exp } from './exps';
-import { ExpsService } from './exps.service';
 
 @Component({
     moduleId: module.id,
@@ -9,22 +8,10 @@ import { ExpsService } from './exps.service';
     styleUrls: ['exps.component.css']
 })
 
-    
-
 export class ExpsComponent{
-    exps: Exp[];
 
-    constructor(public _expsService: ExpsService){ 
-    }
+    constructor(){}
 
-    ngOnInit() { 
-
-        this._expsService.getExpFromAPIwithCache() 
-            .subscribe( 
-                res => this.exps = res,
-                err => console.error(err.status)
-        ); 
-    }
-
+    ngOnInit() {}
 
 }

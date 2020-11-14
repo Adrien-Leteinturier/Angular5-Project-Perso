@@ -61,6 +61,6 @@ h1 span{
 
 @media screen and (max-width: 1200px) {
     .text-introduction{
-        margin: auto;
+        margin: 0 0 0 20px;
     }
 }

@@ -20,7 +20,7 @@
 @media screen and (max-width: 768px)
 {
 
-    .text-application{
+    .text-application, .illustration{
         margin: auto;
     }
 
@@ -32,6 +32,6 @@
 
 @media screen and (max-width: 1200px) {
     .text-application{
-        margin: auto;
+        margin: 0 0 0 20px;
     }
 }

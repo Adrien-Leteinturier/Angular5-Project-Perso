@@ -39,4 +39,8 @@ export class JobService {
       return this.observable;
     }
   }
+
+  passJobDataInPageContent(data){
+    return data;
+  }
 }

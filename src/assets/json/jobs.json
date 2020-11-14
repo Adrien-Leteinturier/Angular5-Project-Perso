@@ -11,7 +11,10 @@
          "backgroundSize": "contain",
          "backgroundPosition": "0px 40px"
       },
-      "img": [],
+      "img": [
+         "../assets/images/mockup-write-it-social.png"
+      ],
+      "videos":"../assets/videos/writeitsocial.mp4",
       "logo": [
          {
             "classIcon": "devicon-javascript-plain"
@@ -50,7 +53,13 @@
          "backgroundSize": "contain",
          "backgroundPosition": "26px 0"
       },
-      "img": [],
+      "cover":"../assets/images/top-ten-home.png",
+      "coverStyle": {
+         "width":"50%"
+      },
+      "img": [
+         "../assets/images/logo-topten.png"
+      ],
       "logo": [
          {
             "classIcon": "devicon-jquery-plain"
@@ -80,11 +89,16 @@
          "backgroundSize": "350px",
          "backgroundPosition": "-80px -5px"
       },
+      "cover":"../assets/images/Ux-cafee-final.jpg",
+      "coverStyle": {
+         "width":"50%"
+      },
       "img":[
-         "../assets/images/Ux-cafee-final.jpg",
-         "../assets/images/Cafee.jpg",
-         "../assets/images/tshirtcafee.jpg"
+         "../assets/images/Cafee.jpg"
       ],
+      "imgStyle":{
+         "width":"50%"
+      },
       "logo": [
          {
             "classIcon": "devicon-photoshop-plain"
@@ -96,7 +110,7 @@
    },
    {
       "title": "La fête de la Moto",
-      "description": "Réalisation d'une affiche pour une fête sur le thème de la moto. Affiche réalisé avec les outils: Photoshop, Illustrator et Indesign",
+      "description": "Projet print réalisé pour la fête de la moto 2016 de la ville de noyon.Réalisation effectuée avec les outils Photoshop, Illustrator et Indesign.Plusieurs techniques utilisées: détourage, colorisation, mise en forme des différentes polices de caractères.Mise en page du projet afin de préparer l'impression des différentes affiches.",
       "iconGit": false,
       "link": "",
       "gitLink": "",
@@ -105,8 +119,11 @@
          "backgroundSize": "450px",
          "backgroundPosition": "-3px -49px"
       },
+      "cover":"../assets/images/feteMoto.jpg",
+      "coverStyle": {
+         "width":"50%"
+      },
       "img":[
-         "../assets/images/feteMoto.jpg",
          "../assets/images/declin1-moto.jpg",
          "../assets/images/declin2-moto.jpg"
       ],

@@ -20,13 +20,17 @@ export class HomeComponent implements OnInit {
 
   ngOnInit() {
     const main = document.getElementById('main-content');
-    $('a[href^="#"]').click(function(){  
-      console.log('yeah')
-      var id = $(this).attr("href");
-      var offset = $(id).offset().top 
-      $(main).animate({scrollTop: offset}, 'slow'); 
-      return false;  
-    }); 
+    $('a[href^="#"]').click(function(){
+      var the_id = $(this).attr("href");
+      if (the_id === '#') {
+        return;
+      }
+      $(main).animate({
+        scrollTop:$(the_id).offset().top
+      }, 'slow');
+      return false;
+    });
+    
 
   }
 

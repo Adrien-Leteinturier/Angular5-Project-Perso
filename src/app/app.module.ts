@@ -24,17 +24,20 @@ import {AngularFireModule} from '@angular/fire';
 import {AngularFireAuthModule} from '@angular/fire/auth';
 import { homeModule } from './home/home.module';
 import { NgsRevealModule } from 'ngx-scrollreveal';
+import { JobContentComponent } from './job-content/job-content.component';
 
 const appRoutes: Routes = [
-  { path: 'home', component: HomeComponent },
-  { path: 'login',      component: OfficeComponent },
+  { path: 'home', component: HomeComponent, data: {animation: 'HomePage'}},
+  { path: 'login', component: OfficeComponent },
+  { path: 'job-content/:index', component: JobContentComponent, data: {animation: 'JobContentPage'}}
 ]
 
 @NgModule({
   declarations: [
     AppComponent,
     InputValidsDirective,
-    ExponentialStrengthPipe
+    ExponentialStrengthPipe,
+    JobContentComponent
   ],
   imports: [
     BrowserModule,

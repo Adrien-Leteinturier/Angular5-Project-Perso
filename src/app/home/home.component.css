@@ -1,3 +1,6 @@
+:host ::ng-deep .mdl-layout__drawer-button.mdl-layout--small-screen-only {
+  color: black !important;
+}
 
 .app-nav-link{
     font-size: 18px;
