@@ -103,6 +103,7 @@
 
   .app-news-img-container img {
     height: auto;
+    width: 100%;
   }
 
   .app-news-text {

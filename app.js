@@ -21,8 +21,8 @@ app.post('/action',function(req,res,next){
   sgMail.setApiKey(process.env.SENDGRID_API_KEY);
   const msg = {
     to: 'adrienleteinturier@gmail.com',
-    from: req.body.email,
-    subject: 'Message de ' + req.body.username +', Adrien Leteinturier site Web',
+    from: 'adrienleteinturier@gmail.com',
+    subject: 'Message de ' + req.body.username +' '+ req.body.email,
     text: req.body.message,
     html: req.body.message,
   };
