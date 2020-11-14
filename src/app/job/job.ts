@@ -5,6 +5,9 @@ export class Job{
     link: string;
     gitLink: string;
     style: {};
+    cover: string;
+    coverStyle: {};
     img: [];
+    videos: string;
     logo: [];
 }
