@@ -12,7 +12,7 @@ export class ElementFormsService {
   httpOptions = {
     headers: new HttpHeaders({ 'Content-Type': 'application/json' })
   };
-  postUrl:string = 'https://46ya6py434.execute-api.eu-west-1.amazonaws.com/latest/action';
+  postUrl:string = 'https://crl1el2mvb.execute-api.eu-west-1.amazonaws.com/latest/action';
 
 
 
